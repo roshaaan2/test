@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<!--head-->
+
+<head>
+    <title>{{ title }}</title>
+
+    <!-- Styles -->
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/normalize.css' />
+    <link rel='stylesheet' href='/stylesheets/font-awesome.css' />
+    <!-- ./Styles -->
+</head>
+<!-- ./head -->
+
+<!-- body -->
+
+<body>
+
+   <nav class="navigation" role="navigation">
+    <hr class="navigation__hr" />
+    <div class="navigation__list">
+        <a class="navigation__list-item" href="/">Главная</a>
+        <a class="navigation__list-item" href="/blog">Статьи</a>
+        <a class="navigation__list-item" href="/contacts">Контакты</a>
+        <a class="navigation__list-item" href="/admin">Log In </a>
+    </div>
+    <hr class="navigation__hr" />
+    </nav>
+
+
+            <!-- inner page -->
+            <div class="inner">
+                <div class="content">
+                    {{{blogArticles}}}
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class="footer">
+                <div class="content">
+                                КПИ курсовая работа 20172
+                </div>
+            </div>
+
+		</div>
+	</body>
+</html>

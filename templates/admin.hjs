@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{title}}</title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+	</head>
+	<body class="admin">
+		<div class="container">
+			<h1 class="admin-title">{{content}}</h1>
+			<hr />
+			<div class="columns">
+			<div class="left list-column">
+				{{{list}}}
+			</div>
+			<div class="right form-column">
+				{{{form}}}
+			</div>
+			</div>
+			<hr />
+		</div>
+	</body>
+</html>

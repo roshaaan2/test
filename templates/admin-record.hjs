@@ -1,0 +1,28 @@
+<form class="form-add" action="/admin" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="formsubmitted" value="yes">
+	<input type="hidden" name="currentPicture" value="{{picture}}">
+	<input type="hidden" name="ID" value="{{ID}}">
+	<div class="type-content">
+	<span class="form-span">Title:</span><br />
+	<input class="title-input" type="text" name="title" value="{{title}}" /></div><br />
+	<div class="type-content"
+	<span class="form-span">Text:</span><br />
+	<textarea name="text">{{text}}</textarea></div><br />
+	<br />
+	<div class="file-upload">
+	<label>
+	<input type="file" name="picture" />
+	<span>Выберите файл</span>
+	</label>
+	</div><br />{{{pictureTag}}}
+	<div class="type-content">
+	<p class="type-content__text">Type:</p>
+	<select name="type">
+		{{{type}}
+		<option value="blog">blog</option>
+		<option value="home">home</option>
+		<option value="services">services</option>
+		<option value="contacts">contacts</option>
+	</select></div>
+	<input class="submit-input" type="submit" value="submit" />
+</form>
